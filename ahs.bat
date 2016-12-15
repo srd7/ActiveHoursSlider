@@ -3,12 +3,8 @@ rem src: https://github.com/srd7/ActiveHoursSlider
 
 @echo off
 
-rem Get current time.
-rem replace ' ' to '0'.
-set now=%time: =0%
-
-rem Extract hour
-set hour=%now:~0,2%
+rem Get current time and extract hour.
+set hour=%time:~0,2%
 
 rem Start hour is 2 hours ago.
 rem End hour is 10 hours later.
